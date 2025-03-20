@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Estilizado</title>
+    <style>
+          body {
+            background: radial-gradient(circle, #000000, #970505d0);
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          color: rgba(255, 255, 255, 0.815);
+      }
+
+        .video-container {
+            width: 80%;
+            max-width: 900px;
+            background-color: #000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .video-container:hover {
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        /* Agregar un estilo para los bordes de los videos */
+        iframe {
+            border-radius: 10px;
+        }
+
+        /* Opcional: un texto para mostrar debajo del video */
+        .video-description {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <center><div class="video-container">
+       <center> <video src="edit.mp4" controls></video></center>
+    </div>
+
+    <div class="video-description">
+        <p>Edit</p>
+    </div></center>
+
+</body>
+</html>
